@@ -27,16 +27,15 @@ const AppItemWide = NativeTachyons.wrap(({ app, navigate }) => {
   )
 })
 
-const AppListWide = ({ apps, navigate }) => {
+const AppListWide = ({ title, apps, navigate }) => {
   return (
     <View>
-      <Heading size="heading2">New Apps We Love</Heading>
+      <Heading size="heading2">{title}</Heading>
       <FlatList
         data={apps}
         keyExtractor={(item, index) => item.id}
-        renderItem={({ item }) => (
-          <AppItemWide app={item} navigate={navigate} />
-        )}
+        renderItem={({ item }) =>
+          <AppItemWide app={item} navigate={navigate} />}
       />
     </View>
   )
