@@ -14,6 +14,11 @@ const Heading = ({ size, children }) => {
       break
     case 'todayHeading':
       fontStyle = 'f2 black-80 b'
+      containerStyle = 'pt3 mb1'
+      break
+    case 'updatedRecently':
+      fontStyle = 'f2 black-80 b'
+      containerStyle = 'pt3 mt5 mb1'
       break
     case 'heading':
       fontStyle = 'f2 black-80 b'

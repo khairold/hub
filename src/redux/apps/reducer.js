@@ -4,42 +4,48 @@ const initialState = [
     name: 'LocoMotion',
     descr: 'Descr1',
     maker: 'Maker 1',
-    play: true
+    play: true,
+    lastUpdated: '2 Days Ago'
   },
   {
     id: '2',
     name: 'App2',
     descr: 'Descr2',
     maker: 'Maker 2',
-    play: true
+    play: true,
+    lastUpdated: '2 Days Ago'
   },
   {
     id: '3',
     name: 'App3',
     descr: 'Descr3',
     maker: 'Maker 3',
-    work: true
+    work: true,
+    lastUpdated: '2 Days Ago'
   },
   {
     id: '4',
     name: 'App4',
     descr: 'Descr4',
     maker: 'Maker 4',
-    work: true
+    work: true,
+    lastUpdated: '2 Days Ago'
   },
   {
     id: '5',
     name: 'App5',
     descr: 'Descr5',
     maker: 'Maker 5',
-    play: true
+    play: true,
+    lastUpdated: '2 Days Ago'
   },
   {
     id: '6',
     name: 'App6',
     descr: 'Descr6',
     maker: 'Maker 6',
-    work: true
+    work: true,
+    lastUpdated: '2 Days Ago'
   }
 ]
 
