@@ -8,6 +8,22 @@ const initialState = [
     lastUpdated: '2 Days Ago'
   },
   {
+    id: 'wifiaoptimizer',
+    name: 'Wi-Fi Optimizer',
+    descr: `How's your WiFi?`,
+    maker: 'TM R&D',
+    customer: true,
+    lastUpdated: '2 Days Ago'
+  },
+  {
+    id: 'ess',
+    name: 'Employee Self Service',
+    descr: 'Leave and stuff',
+    maker: 'GIT',
+    personal: true,
+    lastUpdated: '2 Days Ago'
+  },
+  {
     id: '2',
     name: 'App2',
     descr: 'Descr2',

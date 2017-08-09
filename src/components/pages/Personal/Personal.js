@@ -8,24 +8,24 @@ import AppListWide from '../../common/AppListWide'
 
 const highlights = {
   today: {
-    highlightblue: 'WE BUILD THIS IN-HOUSE',
-    title: 'Marvel at our Apps',
-    subtitle: 'Not for DC fans',
-    imageUri: 'http://geekandsundry.com/wp-content/uploads/2015/04/marvel-game-retrospective-970x545.jpg'
+    highlightblue: 'CHECK THIS OUT',
+    title: 'Medical Stuff',
+    subtitle: 'Panel clinics & benefits entitlement',
+    imageUri: 'https://nyoobserver.files.wordpress.com/2016/08/screen-shot-2016-08-24-at-11-01-59-am.png'
   }
 }
 
-export default class Play extends Component {
+export default class Personal extends Component {
   render() {
     const { apps } = this.props
     const { navigate } = this.props.navigation
     return (
       <ScrollView style={{ flex: 1, backgroundColor: '#ffffff' }}>
         <Mh>
-          <Heading size="heading">Play</Heading>
+          <Heading size="heading">Personal</Heading>
           <HighlightBox {...highlights.today} />
           <AppListWide
-            title="All Work And No Play"
+            title="Life Made Easier"
             apps={apps}
             navigate={navigate}
           />

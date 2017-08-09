@@ -8,24 +8,25 @@ import AppListWide from '../../common/AppListWide'
 
 const highlights = {
   today: {
-    highlightblue: 'WE BUILD THIS IN-HOUSE',
-    title: 'Marvel at our Apps',
-    subtitle: 'Not for DC fans',
-    imageUri: 'http://geekandsundry.com/wp-content/uploads/2015/04/marvel-game-retrospective-970x545.jpg'
+    highlightblue: 'MAKE THEM HAPPY',
+    title: 'Wi-Fi Optimizer',
+    subtitle: 'Milk every ounce of your connection',
+    // imageUri: 'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/WiFi_Home_Floorplan_800px.width-800.png',
+    imageUri: 'https://cdn.cultofmac.com/wp-content/uploads/2016/05/Eero_WiFi_router_05_16_2016_1.jpg'
   }
 }
 
-export default class Play extends Component {
+export default class Customer extends Component {
   render() {
     const { apps } = this.props
     const { navigate } = this.props.navigation
     return (
       <ScrollView style={{ flex: 1, backgroundColor: '#ffffff' }}>
         <Mh>
-          <Heading size="heading">Play</Heading>
+          <Heading size="heading">Customer</Heading>
           <HighlightBox {...highlights.today} />
           <AppListWide
-            title="All Work And No Play"
+            title="Customer At Heart"
             apps={apps}
             navigate={navigate}
           />

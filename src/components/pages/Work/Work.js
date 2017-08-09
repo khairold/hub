@@ -8,11 +8,10 @@ import AppListWide from '../../common/AppListWide'
 
 const highlights = {
   today: {
-    highlightblue: 'CHECK THIS OUT',
+    highlightblue: 'YOU NEED THIS',
     title: 'Meeting App',
     subtitle: 'Remember who says what',
-    imageUri:
-      'http://www.officefurnitureitaly.com/userdata/immagini/articoli/930x453/meeting-table-imeet_12825.jpg'
+    imageUri: 'http://www.officefurnitureitaly.com/userdata/immagini/articoli/930x453/meeting-table-imeet_12825.jpg'
   }
 }
 
@@ -26,7 +25,7 @@ export default class Work extends Component {
           <Heading size="heading">Work</Heading>
           <HighlightBox {...highlights.today} />
           <AppListWide
-            title="Work Apps We Love"
+            title="Work Made Easier"
             apps={apps}
             navigate={navigate}
           />
