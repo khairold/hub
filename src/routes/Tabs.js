@@ -53,7 +53,7 @@ const Tabs = TabNavigator(
     initialRouteName: 'Personal',
     tabBarPosition: 'bottom',
     tabBarComponent: TabBarBottom,
-    swipeEnabled: false,
+    swipeEnabled: true,
     tabBarOptions: {
       style: {
         backgroundColor: '#fdfdfd'

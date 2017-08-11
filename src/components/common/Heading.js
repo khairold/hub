@@ -6,8 +6,16 @@ const Heading = ({ size, children }) => {
   let containerStyle
   let fontStyle
   switch (size) {
+    case 'login':
+      fontStyle = 'f1 b tc ff-ssm darkBlue'
+      containerStyle = 'mt4 mb3'
+      break
     case 'headline':
       fontStyle = ['f-headline', 'black-80']
+      break
+    case 'headingIcon':
+      fontStyle = 'f2 black-80 b'
+      containerStyle = 'bb b--black-10 pt3 pb2 mb1'
       break
     case 'subheadline':
       fontStyle = 'f-subheadline'

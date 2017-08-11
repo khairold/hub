@@ -7,11 +7,31 @@ import AppCaption from '../common/AppCaption'
 import AppIcon from '../common/AppIcon'
 import Hr from './Hr'
 
+const BannerImage = NativeTachyons.wrap(
+  ({ uri = 'http://185.29.100.109/upload/images/putnici/ci2.jpg' }) => {
+    return (
+      <Image
+        cls="mt2 br2 mb3"
+        source={{ uri: uri }}
+        borderRadius={8}
+        style={{
+          flex: 1,
+          width: undefined,
+          height: 160,
+          borderRadius: 8,
+          resizeMode: 'cover'
+        }}
+      />
+    )
+  }
+)
+
 const AppInstallBox = ({ app }) => {
   const name = app ? app.name : null
   const maker = app ? app.maker : null
   return (
     <View>
+      <BannerImage />
       <View cls="mt3 mb3" style={{ flex: 0, flexDirection: 'row' }}>
         <AppIcon size="big" />
         <View cls="ml3">

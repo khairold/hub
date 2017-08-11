@@ -6,9 +6,9 @@ import NativeTachyons from 'react-native-style-tachyons'
 import Tabs from './Tabs'
 import Install from '../components/pages/Install'
 
-const AppInstallHeaderText = NativeTachyons.wrap(({ children }) =>
+const AppInstallHeaderText = NativeTachyons.wrap(({ children }) => (
   <Text cls="ff-ssl b black-40">{children}</Text>
-)
+))
 
 const Stack = StackNavigator(
   {

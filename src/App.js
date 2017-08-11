@@ -1,13 +1,25 @@
 import React, { Component } from 'react'
 import { StatusBar, Text, View } from 'react-native'
 import { compose, createStore, applyMiddleware } from 'redux'
+import { persistStore, autoRehydrate } from 'redux-persist'
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-import reducers from './redux/reducers'
-let store = createStore(reducers)
+
+import reducer from './redux/reducers'
+// const store = createStore(
+//   reducer,
+//   undefined,
+//   compose(applyMiddleware(thunk), autoRehydrate())
+// )
+const store = createStore(reducer, undefined, compose(applyMiddleware(thunk)))
+
+// persistStore(store, { storage: AsyncStorage })
+// persistStore(store, { storage: AsyncStorage }).purge()
+
 // import { Constants } from 'expo'
 import './style'
 
-import Stack from './routes/Stack'
+import Index from './routes/Index'
 
 export default class App extends Component {
   render() {
@@ -20,7 +32,7 @@ export default class App extends Component {
           }}
         >
           <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
-          <Stack />
+          <Index />
         </View>
       </Provider>
     )
